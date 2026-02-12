@@ -176,14 +176,15 @@ function render() {
         <div>
           <h1>Balanced Score Card</h1>
         </div>
-        <div class="hero-actions">
-          <button class="btn btn-outline-light" data-action="open-config">Configure</button>
-        </div>
       </header>
 
       <section class="groups">
         ${groupsMarkup || "<p class=\"text-center text-muted\">Add a group to start scoring.</p>"}
       </section>
+
+      <div class="app-actions">
+        <button class="btn btn-outline-dark" data-action="open-config">Configure</button>
+      </div>
     </div>
 
     <div class="${configClass}" data-action="close-config">
