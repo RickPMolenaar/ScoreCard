@@ -422,6 +422,53 @@ body.modal-open {
   }
 }
 
+@media (max-width: 640px) {
+  #app {
+    padding: 20px 12px 32px;
+  }
+
+  .hero {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .panel,
+  .group-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .score-row {
+    padding: 12px;
+  }
+
+  .labels-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .config-card {
+    width: 100%;
+  }
+
+  .config-header {
+    padding: 16px 16px 10px;
+  }
+
+  .config-body {
+    padding: 16px 16px 22px;
+  }
+
+  .config-group-name,
+  .config-score-name {
+    min-width: 0;
+  }
+
+  .quartile-cell {
+    padding: 2px 2px 0;
+    font-size: 0.85rem;
+  }
+}
+
 @keyframes slideUp {
   from {
     opacity: 0;
